@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<style>
+img.content {
+    max-width: 45%;
+}
+</style>
+
+<div>
+<img src="{{ "/assets/img/BAREBONES.jpg" | relative_url }}">
+<img src="{{ "/assets/img/barebones.jpg" | relative_url }}">
+</div>
+
+<div>
+<h2 id="introduction">Introduction</h2>
+
+<p>This is a compiler written entirely in C. In contrast to <a href="https://github.com/McCoyBecker/compilers-foundations/tree/master/ohana">Ohana</a>, which utilizes a lot of tooling and niceties from numerous Python packages and LLVM, each piece of Barebones is written from scratch in C. That means that it’s unavoidable that we learn a little bit about x86-64 assembly, because we need to target it during code generation. In short, the hardest part of Ohana was constructing the lexer, the parser, and the AST data structure. The rest was “just use llvmlite and LLVM”.</p>
+
+</div>
